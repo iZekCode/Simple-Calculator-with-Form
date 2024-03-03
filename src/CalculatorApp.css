@@ -1,0 +1,124 @@
+.CalculatorApp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 290px;
+  height: 450px;
+  margin-top: 70px;
+}
+
+.top-content {
+  height: 29%;
+  width: 100%;
+  text-align: right;
+  background-color: #585657;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom-content {
+  height: 71%;
+  width: 100%;
+  background-color: #000000;
+}
+
+.top-buttons {
+  padding-top: 27px;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-buttons {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-buttons button {
+  margin: 3px 10px;
+  border-radius: 25px;
+  border: 1px solid black;
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #A5A5A5;
+  color: white;
+}
+
+.right-buttons button {
+  background-color: #FAA007;
+}
+
+.left-buttons .row:first-child button:last-child {
+  background-color: #856242;
+}
+
+.bottom-buttons button{
+  padding: 0px;
+  margin: 6px 10px;
+  width: 124px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-color: #FAA007;
+  color: white;
+}
+
+.bottom-buttons button:first-child {
+  background-color: #A5A5A5;
+}
+
+button:hover {
+  filter: opacity(0.5);
+  transition: 0.1s;
+}
+
+.display {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 45px;
+  padding-top: 65px;
+  padding-right: 15px;
+  padding-left: 15px;
+  z-index: 10;
+}
+
+.history-list {
+  height: 110px;
+  overflow: scroll;
+  padding: 5px 8px;
+}
+
+.history-list::-webkit-scrollbar {
+  display: none;
+}
+
+.history {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+}
